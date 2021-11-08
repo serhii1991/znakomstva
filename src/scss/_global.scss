@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // font-size = 10px / 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+// Footer on bottom
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+// Header global setting
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: $color-bg;
+  padding: 1.3rem;
+
+  .select__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2.6rem;
+      height: 2.6rem;
+      background-image: url(../img/flag-usa.svg);
+      background-size: cover;
+    }
+  }
+
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 2rem;
+    padding-left: 3.6rem;
+  }
+}
