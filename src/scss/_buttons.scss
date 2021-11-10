@@ -4,6 +4,7 @@
   cursor: pointer;
   transition: all .3s;
 
+
   &__transparent {
     position: relative;
     background-color: transparent;
@@ -31,6 +32,14 @@
       -webkit-mask-composite: destination-out;
       mask-composite: exclude;
     }
+  }
+
+  &__color {
+    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
   }
 }
 

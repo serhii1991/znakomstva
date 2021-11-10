@@ -71,6 +71,12 @@ li {
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: destination-out;
       mask-composite: exclude; }
+  .btn__color {
+    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    letter-spacing: 2px; }
 
 .btn__transparent:hover {
   opacity: .7; }
@@ -115,7 +121,8 @@ li {
   color: #eee;
   font-size: 1.4rem;
   line-height: 2.1rem;
-  margin-top: -1px; }
+  margin-top: -1px;
+  z-index: 1; }
   .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -141,7 +148,27 @@ li {
   background-color: #230E2B;
   height: 100%;
   padding-top: 3rem;
-  color: #fff; }
+  color: #fff;
+  z-index: 1; }
+  .page-login__wrapper {
+    height: 100%;
+    position: relative;
+    overflow: hidden; }
+    .page-login__wrapper::before, .page-login__wrapper::after {
+      content: "";
+      position: absolute;
+      width: 53.6rem;
+      background-repeat: no-repeat; }
+    .page-login__wrapper::before {
+      left: 0;
+      height: 98.2rem;
+      background-image: url(../img/colors/login-before.png); }
+    .page-login__wrapper::after {
+      right: 0;
+      background-image: url(../img/colors/login-after.png);
+      bottom: 0;
+      height: 69.5rem;
+      z-index: 1; }
   .page-login__top {
     display: flex;
     justify-content: space-between; }
@@ -153,4 +180,64 @@ li {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    max-width: 84.6rem;
+    text-align: center;
+    z-index: 2; }
+  .page-login__title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 90px;
+    margin-bottom: 1rem; }
+  .page-login__description {
+    margin-bottom: 5rem; }
+  .page-login__email, .page-login__pass {
+    max-width: 38rem;
+    width: 100%;
+    padding: 2.3rem 2.3rem 2.3rem 7rem;
+    border-radius: 500px;
+    border: none;
+    background-color: #42204E;
+    transition: all .3s;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem; }
+    .page-login__email::placeholder, .page-login__pass::placeholder {
+      color: #8B5D9A;
+      font-size: 1.6rem;
+      letter-spacing: 1px; }
+    .page-login__email:focus, .page-login__pass:focus {
+      box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2);
+      outline: none; }
+    .page-login__email-box, .page-login__pass-box {
+      position: relative;
+      display: block;
+      max-width: 38rem;
+      margin: 0 auto; }
+      .page-login__email-box::before, .page-login__pass-box::before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        left: 3rem;
+        top: 2.4rem; }
+  .page-login__email-box::before {
+    background-image: url(../img/icons/message.svg); }
+  .page-login__pass-box::before {
+    background-image: url(../img/icons/password.svg); }
+  .page-login__submit {
+    padding: 2.3rem;
+    max-width: 38rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2); }
+    .page-login__submit:hover {
+      box-shadow: none; }
+  .page-login__forgot {
+    display: block;
+    color: #8B5D9A; }
+    .page-login__forgot:hover {
+      color: #42204E;
+      transition: all .2s; }
