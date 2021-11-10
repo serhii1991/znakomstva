@@ -23,6 +23,24 @@ body {
   line-height: 2.4rem;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
 // Footer on bottom
 .wrapper {
   display: flex;
@@ -34,38 +52,4 @@ body {
 }
 .footer {
   flex: 0 0 auto;
-}
-
-// Header global setting
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: $color-bg;
-  padding: 1.3rem;
-
-  .select__container {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 2.6rem;
-      height: 2.6rem;
-      background-image: url(../img/flag-usa.svg);
-      background-size: cover;
-    }
-  }
-
-  select {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    margin-left: 2rem;
-    padding-left: 3.6rem;
-  }
 }

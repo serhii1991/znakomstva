@@ -19,6 +19,21 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem; }
 
+a {
+  text-decoration: none;
+  color: currentColor; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  max-width: 120rem;
+  padding: 0 1rem;
+  margin: 0 auto; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -30,6 +45,39 @@ body {
 .footer {
   flex: 0 0 auto; }
 
+.btn {
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  transition: all .3s; }
+  .btn__transparent {
+    position: relative;
+    background-color: transparent;
+    color: #fff; }
+    .btn__transparent:hover {
+      opacity: .7; }
+    .btn__transparent:active {
+      opacity: 1; }
+    .btn__transparent::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude; }
+
+.btn__transparent:hover {
+  opacity: .7; }
+
+.btn__transparent:active {
+  opacity: 1; }
+
 .header {
   display: flex;
   justify-content: center;
@@ -39,19 +87,70 @@ body {
   font-weight: 500;
   background-color: #1B0522;
   padding: 1.3rem; }
-  .header .select__container {
-    position: relative; }
-    .header .select__container::before {
-      content: "";
-      position: absolute;
-      width: 2.6rem;
-      height: 2.6rem;
-      background-image: url(../img/flag-usa.svg);
-      background-size: cover; }
-  .header select {
-    appearance: none;
+  .header__text {
+    margin-right: 20px; }
+
+.country {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .country__flag {
+    width: 100%;
+    display: block;
+    border-radius: 4px; }
+    .country__flag-box {
+      width: 4.6rem;
+      margin-right: 10px; }
+  .country__select {
     background-color: transparent;
-    border: none;
     color: #fff;
-    margin-left: 2rem;
-    padding-left: 3.6rem; }
+    border: none;
+    padding-right: .8rem;
+    cursor: pointer; }
+    .country__select option {
+      background-color: #1B0522;
+      border: none; }
+
+.footer {
+  color: #eee;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-top: -1px; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem; }
+  .footer__nav-list {
+    display: flex; }
+  .footer__nav-item:not(:last-child) {
+    margin-right: 3rem; }
+  .footer__nav-item:hover > .footer__nav-link {
+    color: rgba(238, 238, 238, 0.6); }
+  .footer__nav-link {
+    transition: color .3s; }
+  .footer__lang-select {
+    border: none;
+    background-color: transparent;
+    color: #eee; }
+    .footer__lang-select * {
+      color: #eee;
+      background-color: #1B0522; }
+
+.page-login {
+  background-color: #230E2B;
+  height: 100%;
+  padding-top: 3rem;
+  color: #fff; }
+  .page-login__top {
+    display: flex;
+    justify-content: space-between; }
+  .page-login__first {
+    margin-right: 2rem; }
+  .page-login__register {
+    padding: 1.1rem 3.6rem; }
+  .page-login__form-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }

@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: $color-bg;
+  padding: 1.3rem;
+
+  &__text {
+    margin-right: 20px;
+  }
+}
+
+.country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__flag {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    &-box {
+      width: 4.6rem;
+      margin-right: 10px;
+    }
+  }
+
+  &__select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding-right: .8rem;
+    cursor: pointer;
+
+    option {
+      background-color: $color-bg;
+      border: none;
+    }
+  }
+}
