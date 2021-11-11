@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  position: relative;
 }
 
 a {
@@ -52,4 +53,14 @@ li {
 }
 .footer {
   flex: 0 0 auto;
+}
+
+.element-blur {
+  background-color: #381A42;
+  width: 85rem;
+  height: 85rem;
+  position: absolute;
+  z-index: -1;
+  top: 300px;
+  filter: blur(300px);
 }

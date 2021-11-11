@@ -17,7 +17,8 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -44,6 +45,15 @@ li {
 
 .footer {
   flex: 0 0 auto; }
+
+.element-blur {
+  background-color: #381A42;
+  width: 85rem;
+  height: 85rem;
+  position: absolute;
+  z-index: -1;
+  top: 300px;
+  filter: blur(300px); }
 
 .btn {
   border: none;
@@ -241,3 +251,31 @@ li {
     .page-login__forgot:hover {
       color: #42204E;
       transition: all .2s; }
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(29, 11, 35, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 5; }
+  .modal__inner {
+    max-width: 68rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1B0522;
+    border-radius: 5rem;
+    padding: 5rem;
+    color: #fff; }
+  .modal__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.8rem; }
+  .modal__description {
+    margin-bottom: 2rem;
+    color: #8B5D9A; }
