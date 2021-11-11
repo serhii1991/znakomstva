@@ -1,0 +1,211 @@
+.form {
+  &__box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    margin-bottom: 3rem;
+  }
+
+  &__field {
+    border: none;
+    display: flex;
+    max-width: 38rem;
+    width: 100%;
+    display: inline-block;
+
+    &-description {
+      text-align: left;
+      color: $color-text;
+      max-width: 38rem;
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__email,
+  &__pass,
+  &__name,
+  &__day,
+  &__year,
+  &__month,
+  &__sex {
+    max-width: 38rem;
+    width: 100%;
+    padding: 2.3rem 2.3rem 2.3rem 7rem;
+    border-radius: 500px;
+    border: none;
+    background-color: $color-primary;
+    transition: all .3s;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+    &::placeholder {
+      color: $color-text;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2);
+      outline: none;
+    }
+
+    &-box {
+      position: relative;
+      display: block;
+      max-width: 38rem;
+      margin: 0 auto;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        left: 3rem;
+        top: 2.4rem;
+      }
+    }
+  }
+
+  &__day,
+  &__month,
+  &__year {
+    width: 10rem;
+    padding: 2.3rem 3rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__month {
+    color: $color-text;
+    width: 17rem;
+    font-size: 1.6rem;
+    appearance: none;
+    cursor: pointer;
+
+    &-box {
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        background-image: url(../img/icons/chevron-down.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 2rem;
+        top: 2.6rem;
+      }
+    }
+  }
+
+  &__email {
+    &-box {
+      &::before {
+        background-image: url(../img/icons/message.svg);
+      }
+    }
+  }
+
+  &__pass {
+    &-box {
+      &::before {
+        background-image: url(../img/icons/password.svg);
+      }
+    }
+  }
+
+  &__name {
+    &-box {
+      &::before {
+        background-image: url(../img/icons/user.svg);
+      }
+    }
+  }
+
+  &__sex {
+    max-width: 49%;
+    height: 7rem;
+    padding: 1.7rem;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      padding: 1px;
+
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    &-man {
+      &--button {
+        &::before {
+          background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+          box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.1);
+        }
+      }
+    }
+
+    &-woman {
+      &--button {
+        &::before {
+          background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+          box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.1);
+        }
+      }
+    }
+  }
+
+  &__submit {
+    padding: 2.3rem;
+    max-width: 38rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2);
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.form__sex-man:checked ~ .form__sex-man--button {
+  background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+}
+
+.form__sex-woman:checked ~ .form__sex-woman--button {
+  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+}

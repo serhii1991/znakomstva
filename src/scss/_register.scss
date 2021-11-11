@@ -1,0 +1,67 @@
+.page-registration {
+  &__wrapper {
+    &::before {
+      height: 85.9rem;
+      background-image: url(../img/colors/register-before.png);
+    }
+
+    &::after {
+      background-image: url(../img/colors/register-after.png);
+      height: 107.5rem;
+      width: 44.1rem;
+    }
+  }
+
+  &__top {
+    margin-bottom: 6.5rem;
+  }
+
+
+  &__register {
+    padding: 1.1rem 3.6rem;
+    z-index: 2;
+  }
+
+  &__form {
+    &-box {
+      max-width: 43rem;
+    }
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+
+  &__description {
+    color: $color-text;
+  }
+
+  &__sex {
+    display: none;
+  }
+
+  &__pass {
+    &-eye {
+        position: absolute;
+        top: 2.2rem;
+        right: 3rem;
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../img/icons/eye.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+  }
+
+  &__forgot {
+    display: block;
+    color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+      transition: all .2s;
+    }
+  }
+}
