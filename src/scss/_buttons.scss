@@ -4,7 +4,6 @@
   cursor: pointer;
   transition: all .3s;
 
-
   &__transparent {
     position: relative;
     background-color: $color-bg;
@@ -40,6 +39,30 @@
     display: inline-block;
     font-size: 1.6rem;
     letter-spacing: 2px;
+  }
+
+  &__hello {
+    position: relative;
+    width: 100%;
+    border: none;
+    height: 5rem;
+    border-radius: 4rem;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+    padding-left: 3rem;
+    text-align: left;
+    cursor: pointer;
+
+    &-hand {
+      position: absolute;
+      display: inline-block;
+      right: 2.7rem;
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../img/icons/hand.png);
+    }
   }
 }
 

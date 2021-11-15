@@ -1,0 +1,155 @@
+.page-home {
+  position: relative;
+  overflow: hidden;
+  padding-top: 0;
+
+  & > .element-blur {
+    width: 139.5rem;
+    height: 139.5rem;
+    left: 83rem;
+    top: 44rem;
+  }
+
+  &__top {
+    background-color: $color-bg-light;
+    margin-bottom: 3rem;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      padding: 4.4rem 0;
+    }
+  }
+
+  &__logo {
+    &-box {
+      margin-right: 7.6rem;
+    }
+  }
+
+  &__menu {
+    margin-right: 10rem;
+    &-item {
+      position: relative;
+      display: inline-block;
+      transition: all .3s;
+
+      &.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6.5rem;
+        height: 4px;
+        width: 100%;
+        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+      }
+
+      &:hover {
+        color: $color-orange;
+      }
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      height: 100%;
+    }
+  }
+
+  &__country {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-right: 1rem;
+    cursor: pointer;
+
+    option {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__service {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  &__search {
+    width: 0;
+    opacity: 0;
+    &-box {
+      position: relative;
+      width: 0;
+      margin-right: 2rem;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../img/icons/search.svg);
+        background-repeat: no-repeat;
+        left: -2rem;
+        top: 3px;
+      }
+    }
+  }
+
+  &__notification {
+    background: none;
+    border: none;
+    width: 1.9rem;
+    height: 1.9rem;
+    background-image: url(../img/icons/notification.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+    span {
+      position: absolute;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      color: #fff;
+      top: -1rem;
+      right: -2rem;
+      background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+      border-radius: 20px;
+      padding: 2px 5px;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-avatar {
+      border-radius: 50%;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__users {
+    &-title {
+      margin-bottom: 2rem;
+      font-size: 2.8rem;
+      line-height: 4.2rem;
+      font-weight: 500;
+    }
+
+    &-top,
+    &-women,
+    &-men {
+      display: flex;
+      margin-bottom: 5rem;
+    }
+  }
+}
