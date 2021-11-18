@@ -58,7 +58,7 @@ li {
 //blur
 
 .element-blur {
-  background-color: #381A42;
+  background-color: #381a42;
   width: 85rem;
   height: 85rem;
   position: absolute;
@@ -119,4 +119,16 @@ li {
       z-index: 1;
     }
   }
+}
+
+.card__name.online .indicator,
+.page-user__name.online .indicator {
+  width: 1rem;
+  height: 1rem;
+  background-color: $color-green;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

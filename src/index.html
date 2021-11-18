@@ -29,19 +29,19 @@
         </form>
       </header>
 
-      <div class="page page-home">
+      <div class="page page-user">
         <div class="element-blur"></div>
-        <div class="page-home__top">
+        <div class="top-bar__top">
 
           <div class="container">
-            <div class="page-home__top-inner">
-              <div class="page-home__logo-box">
-                <img src="img/logo.png" alt="" class="page-home__logo">
+            <div class="top-bar__top-inner">
+              <div class="top-bar__logo-box">
+                <img src="img/logo.png" alt="" class="top-bar__logo">
               </div>
-              <ul class="page-home__menu">
-                <li class="page-home__menu-item active"><a href="#" class="page-home__link">Анкеты</a></li>
-                <li class="page-home__menu-item"><a href="#" class="page-home__link">Сообщения</a></li>
-                <li class="page-home__menu-item"><a href="#" class="page-home__link">Подписка</a></li>
+              <ul class="top-bar__menu">
+                <li class="top-bar__menu-item active"><a href="#" class="top-bar__link">Анкеты</a></li>
+                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Сообщения</a></li>
+                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Подписка</a></li>
               </ul>
               <select class="country__select" name="country">
                 <option value="usa">Америка</option>
@@ -49,153 +49,95 @@
                 <option value="poland">Польша</option>
               </select>
 
-              <div class="page-home__service">
-                <div class="page-home__search-box">
-                  <input type="text" class="page-home__search">
+              <div class="top-bar__service">
+                <div class="top-bar__search-box">
+                  <input type="text" class="top-bar__search">
                 </div>
-                <button class="page-home__notification"><span>123</span></button>
+                <button class="top-bar__notification"><span>123</span></button>
               </div>
-              <div class="page-home__profile">
-                <img src="img/avtar.jpg" alt="avatar" class="page-home__profile-avatar">
-                <div class="page-home__profile-name">Иван Иванов</div>
+              <div class="top-bar__profile">
+                <img src="img/avtar.jpg" alt="avatar" class="top-bar__profile-avatar">
+                <div class="top-bar__profile-name">Иван Иванов</div>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
-          <div class="page-home__users">
-            <h2 class="page-home__users-title">Топ для знакомств</h2>
-            <div class="page-home__users-top">
+          <div class="page-user__container">
 
-              <div class="card" style="background: url(../img/content/user-1.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Виктор <span class="card__age">22</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
+            <div class="page-user__info">
+              <button class="btn__transparent btn__left"></button>
+              <div class="page-user__left">
+                <div class="page-user__avatar">
+                  <button class="bookmark"></button>
+                  <img src="img/user/user-avatar.jpg" alt="avatar big" class="page-user__photo page-user__photo-avatar">
+                  <button class="btn__color heart"><span class="heart__icon"></span></button>
+                </div>
+                <div class="page-user__thumbnail">
+                  <img src="img/user/user-thumbnail-1.jpg" alt="thumbnail 1"
+                    class="page-user__photo page-user__photo-thumbnail">
+                  <img src="img/user/user-thumbnail-2.jpg" alt="thumbnail 2"
+                    class="page-user__photo page-user__photo-thumbnail">
+                  <img src="img/user/user-thumbnail-3.jpg" alt="thumbnail 3"
+                    class="page-user__photo page-user__photo-thumbnail">
+                  <img src="img/user/user-thumbnail-4.jpg" alt="thumbnail 4"
+                    class="page-user__photo page-user__photo-thumbnail">
                 </div>
               </div>
+              <div class="page-user__right">
+                <div class="page-user__name online">Виктор <span class="page-user__age">22</span><span
+                    class="indicator"></span></div>
+                <div class="page-user__btn-wrapper">
+                  <button class="page-user__btn btn__color btn__hello">Поприветствовать<span
+                      class="btn__hello-hand animate__animated animate__shakeX"></span></button>
+                </div>
+                <div class="page-user__parametrs-box">
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__money">Ставка</div>
+                    <div class="border"></div>
+                    <div class="value__name value__money">15 654 руб</div>
+                  </div>
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__height">Рост</div>
+                    <div class="border"></div>
+                    <div class="value__name value__height">186 см</div>
+                  </div>
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__weight">Вес</div>
+                    <div class="border"></div>
+                    <div class="value__name value__weight">80 кг</div>
+                  </div>
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__eye">Цвет глаз</div>
+                    <div class="border"></div>
+                    <div class="value__name value__eye">Голубые</div>
+                  </div>
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__hair">Цвет волос</div>
+                    <div class="border"></div>
+                    <div class="value__name value__hair">Светлые</div>
+                  </div>
+                  <div class="page-user__parametrs">
+                    <div class="parametr__name parametr__meet">Цель знакомства</div>
+                    <div class="border"></div>
+                    <div class="value__name value__meet">Пока не знаю</div>
+                  </div>
+                </div>
 
-              <div class="card" style="background: url(../img/content/user-2.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Марина <span class="card__age">19</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
+                <div class="page-user__about">
+                  <h4 class="page-user__title">О себе</h4>
+                  <p class="page-user__text">Задача организации, в особенности же сложившаяся структура организации
+                    представляет собой интересный
+                    эксперимент проверки модели развития.</p>
+                  <p class="page-user__text"> Задача организации, в особенности же постоянный количественный рост
+                    и сфера нашей активности играет
+                    важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+                  <div class="page-user__data">На сайте с <span class="data">21.08.2021</span></div>
                 </div>
               </div>
-
-              <div class="card" style="background: url(../img/content/user-3.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Алексей <span class="card__age">34</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-4.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Виктория <span class="card__age">18</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-5.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Максим <span class="card__age">24</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
+              <button class="btn__transparent btn__right"></button>
             </div>
 
-            <h2 class="page-home__users-title">Ищу парня</h2>
-            <div class="page-home__users-women">
-
-              <div class="card" style="background: url(../img/content/user-6.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Алина <span class="card__age">25</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-7.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Алёна <span class="card__age">20</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-8.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Марина <span class="card__age">19</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-9.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Виктория <span class="card__age">18</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-10.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Маргарита <span class="card__age">26</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-            </div>
-
-            <h2 class="page-home__users-title">Мужчины</h2>
-            <div class="page-home__users-men">
-
-              <div class="card" style="background: url(../img/content/user-11.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Виктор <span class="card__age">30</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-12.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Андрей <span class="card__age">22</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-13.jpg)">
-                <div class="card__description">
-                  <div class="card__name online">Саша <span class="card__age">38</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-14.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Максим <span class="card__age">19</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-              <div class="card" style="background: url(../img/content/user-15.jpg)">
-                <div class="card__description">
-                  <div class="card__name">Игорь <span class="card__age">24</span><span class="indicator"></span></div>
-                  <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                  <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                </div>
-              </div>
-
-            </div>
           </div>
         </div>
       </div>

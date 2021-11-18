@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Znakomstva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <!-- Header -->
+      <header class="header">
+        <span class="header__text">Знакомства по всему миру</span>
+        <form action="#" class="country">
+          <div class="country__flag-box">
+            <img src="img/icons/flag-usa.svg" alt="USA" class="country__flag">
+          </div>
+          <select class="country__select" name="country">
+            <option value="usa">Америка</option>
+            <option value="ukraine">Украина</option>
+            <option value="poland">Польша</option>
+          </select>
+        </form>
+      </header>
+
+      <div class="page__wrapper page-registration__wrapper">
+
+        <div class="page page-registration">
+          <div class="container">
+            <div class="page__top page-registration__top">
+              <div class="page-registration__logo">
+                <img src="img/logo.png" alt="Znakomstva">
+              </div>
+              <div class="page__enter page-registration__enter">
+                <a href="#" class="page__first page-registration__first">Уже есть аккаунт?</a>
+                <a href="#" class="btn btn__transparent page__register page-registration__register">Войти</a>
+              </div>
+            </div>
+
+            <div class="form__box page-registration__form-box">
+              <div class="element-blur"></div>
+              <form action="" class="form page-registration__form">
+                <h1 class="form__title page-registration__title">Создай новый аккаунт</h1>
+                <div class="form__description page-registration__description">Присоединяйся к сообществу из 518 млн человек!</div>
+
+                <div class="form__name-box page-registration__name-box">
+                  <input type="text" class="form__name page-registration__name" placeholder="Ваше имя" required>
+                </div>
+
+                <fieldset class="form__field form-registration__field">
+                  <legend class="form__field-description form-registration__field-description">Дата рождения</legend>
+                  <input type="text" class="form__day page-registration__day" placeholder="День" required>
+                  <div class="form__month-box page-registration__month-box">
+                  <select name="month" class="form__month page-registration__month">
+                    <option value="0">Месяц</option>
+                    <option value="january">Январь</option>
+                    <option value="february">Февраль</option>
+                    <option value="march">Март</option>
+                    <option value="april">Апрель</option>
+                    <option value="may">Май</option>
+                    <option value="june">Июнь</option>
+                    <option value="july">Июль</option>
+                    <option value="august">Август</option>
+                    <option value="september">Сеньтябрь</option>
+                    <option value="october">Октябрь</option>
+                    <option value="november">Ноябрь</option>
+                    <option value="december">Декабрь</option>
+                  </select>
+                  </div>
+                  <input type="text" class="form__year page-registration__year" placeholder="Год" required>
+                </fieldset>
+
+                <div class="form__sex-box page-registration__sex-box">
+
+                  <input type="radio" class="form__sex-man page-registration__sex page-registration__sex-man" value="man" id="man" name="sex">
+                  <label for="man" class="form__sex form__sex-man--button page-registration__sex-man--button"><img src="img/icons/man.png" alt="icon-man" class="form__icon"></label>
+
+                  <input type="radio" class="form__sex-woman page-registration__sex page-registration__sex-woman" value="woman" id="woman" name="sex">
+                  <label for="woman" class="form__sex form__sex-woman--button page-registration__sex-woman--button"><img src="img/icons/woman.png" alt="icon-woman" class="form__icon"></label>
+                </div>
+
+                <div class="form__email-box page-registration__email-box">
+                  <input type="email" class="form__email page-registration__email" placeholder="Введите электронную почту" required>
+                </div>
+
+                <div class="form__pass-box page-registration__pass-box">
+                  <input type="password" class="form__pass page-registration__pass" placeholder="Введите пароль" required>
+                  <span class="page-registration__pass-eye"></span>
+                </div>
+
+                <button class="btn btn__color form__submit page-registration__submit">Войти</button>
+
+                <a href="#" class="page-registration__forgot">Я не помню пароль</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Советы</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правила оплаты</a></li>
+            </ul>
+          </div>
+          <div class="footer-privancy">Политика обработки персональных данных</div>
+          <div class="footer__lang">
+            <form action="#">
+              <select class="footer__lang-select" name="lang">
+                <option value="ru">RU</option>
+                <option value="eng">ENG</option>
+                <option value="pol">POL</option>
+              </select>
+            </form>
+          </div>
+          <div class="footer__copy">© Company 2021</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

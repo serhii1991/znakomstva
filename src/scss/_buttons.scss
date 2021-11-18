@@ -2,7 +2,7 @@
   border: none;
   border-radius: 500px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &__transparent {
     position: relative;
@@ -10,7 +10,7 @@
     color: #fff;
 
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
 
     &:active {
@@ -26,7 +26,7 @@
       bottom: 0;
       border-radius: inherit;
       padding: 1px;
-      background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+      background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: destination-out;
       mask-composite: exclude;
@@ -34,7 +34,7 @@
   }
 
   &__color {
-    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
     color: #fff;
     display: inline-block;
     font-size: 1.6rem;
@@ -64,10 +64,50 @@
       background-image: url(../img/icons/hand.png);
     }
   }
+
+  &__left,
+  &__right {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    background-color: transparent;
+    cursor: pointer;
+    top: 26rem;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__left {
+    left: 0;
+
+    &::after {
+      background-image: url(../img/icons/arr-left.svg);
+    }
+  }
+
+  &__right {
+    right: 0;
+
+    &::after {
+      background-image: url(../img/icons/arr-right.svg);
+    }
+  }
 }
 
 .btn__transparent:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .btn__transparent:active {

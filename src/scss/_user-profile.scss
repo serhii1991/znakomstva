@@ -1,0 +1,168 @@
+.page-user {
+  position: relative;
+  overflow: hidden;
+  padding-top: 0;
+
+  & > .element-blur {
+    width: 1200px;
+    height: 1200px;
+    left: 445px;
+    top: 409px;
+  }
+
+  &__info {
+    position: relative;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 38rem;
+    width: 100%;
+  }
+
+  &__photo {
+    display: block;
+
+    &-avatar {
+      border-radius: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    &-thumbnail {
+      border-radius: 2rem;
+    }
+  }
+
+  &__avatar {
+    position: relative;
+  }
+
+  .bookmark,
+  .heart {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .bookmark {
+    width: 16px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/icons/bookmark.svg);
+    top: 3rem;
+    left: 3rem;
+
+    &:hover {
+      background-image: url(../img/icons/bookmark-fill.svg);
+    }
+  }
+
+  .heart {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.1);
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover .heart__icon {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &__icon {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../img/icons/heart.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.4s;
+    }
+  }
+
+  &__thumbnail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    max-width: 55rem;
+  }
+
+  &__name {
+    position: relative;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    display: inline-block;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    width: 22rem;
+
+    &-wrapper {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__parametrs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &-box {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__data {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-text;
+  }
+}
+
+.parametr__money,
+.value__money,
+.page-user__title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.parametr__name {
+  padding-right: 2rem;
+  white-space: nowrap;
+}
+
+.value__name {
+  padding-left: 2rem;
+  white-space: nowrap;
+}
+
+.border {
+  max-width: 100%;
+  width: 100%;
+  border-bottom: 1px dashed #4a2956;
+}
