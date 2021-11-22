@@ -90,7 +90,9 @@ li {
       z-index: 1; }
 
 .card__name.online .indicator,
-.page-user__name.online .indicator {
+.page-user__name.online .indicator,
+.chat__user-name.online .indicator,
+.chat__message-user-name.online .indicator {
   width: 1rem;
   height: 1rem;
   background-color: #33E159;
@@ -3760,3 +3762,146 @@ li {
   max-width: 100%;
   width: 100%;
   border-bottom: 1px dashed #4a2956; }
+
+.chat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(29, 11, 35, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 10; }
+  .chat__wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .chat__inner {
+    display: flex; }
+  .chat__user {
+    border-radius: 50px;
+    background-color: #1B0522;
+    padding: 5rem 10rem 5rem 2rem; }
+    .chat__user-item {
+      border-radius: 500px;
+      padding: 1rem 3rem;
+      display: flex;
+      align-items: center;
+      width: 36rem;
+      position: relative;
+      cursor: pointer; }
+      .chat__user-item:hover .chat__user-name {
+        transform: translateX(0.5rem); }
+      .chat__user-item.active {
+        background: linear-gradient(90deg, #f8f8f8 0%, #250f2d 0.01%, #3a1845 100%); }
+    .chat__user-img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 2rem;
+      overflow: hidden; }
+    .chat__user-name {
+      color: #fff;
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      position: relative;
+      display: inline-block;
+      padding-right: 2rem;
+      transition: all 0.3s; }
+    .chat__user-last-message {
+      color: #8B5D9A; }
+      .chat__user-last-message.new-message .message__new {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        position: absolute;
+        right: 1.5rem;
+        top: 4.8rem;
+        background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%); }
+  .chat__message {
+    max-width: 53rem;
+    width: 100%;
+    background-color: #2a1332;
+    border-radius: 5rem;
+    padding: 5rem;
+    padding-bottom: 11rem;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    margin-left: -8rem; }
+    .chat__message-user-name {
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      padding-right: 2rem;
+      margin-bottom: 2rem; }
+
+.message {
+  margin-bottom: 2rem;
+  display: flex; }
+  .message:last-of-type {
+    margin-bottom: 9rem; }
+  .message.admin {
+    flex-direction: row-reverse; }
+    .message.admin .message__avatar {
+      margin-right: 0;
+      margin-left: 1rem; }
+    .message.admin .message__text {
+      background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+      border-radius: 50px 0px 50px 50px; }
+  .message__avatar {
+    max-width: 4rem;
+    width: 100%;
+    height: 4rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 1rem; }
+  .message__text {
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+    border-radius: 0px 50px 50px 50px; }
+  .message__type {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 0 5rem; }
+  .message__input {
+    width: 100%;
+    padding: 1.8rem 3rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #42204E;
+    padding-right: 7rem;
+    color: #fff; }
+    .message__input::placeholder {
+      color: #8B5D9A;
+      font-size: 1.6rem; }
+    .message__input-box {
+      position: relative; }
+  .message__send {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url(../img/icons/send.svg);
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%); }

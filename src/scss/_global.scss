@@ -122,7 +122,9 @@ li {
 }
 
 .card__name.online .indicator,
-.page-user__name.online .indicator {
+.page-user__name.online .indicator,
+.chat__user-name.online .indicator,
+.chat__message-user-name.online .indicator {
   width: 1rem;
   height: 1rem;
   background-color: $color-green;
