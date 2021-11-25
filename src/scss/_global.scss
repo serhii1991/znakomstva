@@ -6,6 +6,7 @@ body {
 html {
   box-sizing: border-box;
   font-size: 62.5%; // font-size = 10px / 1rem;
+  overflow: hidden;
 }
 
 *,
@@ -72,7 +73,7 @@ li {
 .page {
   background-color: $color-primary-dark;
   height: 100%;
-  padding-top: 3rem;
+  //padding-top: 3rem;
   color: #fff;
   z-index: 1;
 
