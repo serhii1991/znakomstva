@@ -33,37 +33,47 @@
 
       <div class="page page-login">
         <div class="container">
-          <div class="page__top page-login__top">
-            <div class="page-login__logo">
+
+        <!-- top-bar -->
+          <div class="top-bar">
+            <div class="top-bar__logo">
               <img src="img/logo.png" alt="Znakomstva">
             </div>
-            <div class="page__enter page-login__enter">
-              <a href="#" class="page-login__first">Впервые здесь?</a>
-              <a href="#" class="btn btn__transparent page-login__register">Регистрация</a>
+            <div class="top-bar__enter">
+              <span class="top-bar__first">Впервые здесь?</span>
+              <a href="#" class="btn border-gradient top-bar__btn">Регистрация</a>
             </div>
           </div>
 
-          <div class="form__box page-login__form-box">
+          <!-- form -->
+
+          <div class="page-login__form-box">
             <div class="element-blur"></div>
-            <form action="" class="form page-login__form">
-              <h1 class="form__title page-login__title">Знакомства без преград</h1>
-              <div class="form__description page-login__description">Для современного мира сплочённость команды профессионалов однозначно фиксирует необходимость системы обучения кадров, соответствующей насущным потребностям.</div>
-              <div class="form__email-box page-login__email-box">
-                <input type="email" class="form__email page-login__email" placeholder="Введите электронную почту" required>
-              </div>
-              <div class="page-login__pass-box">
-                <input type="password" class="form__pass page-login__pass" placeholder="Введите пароль" required>
-              </div>
+            <form action="#" class="page-login__form">
+              <h1 class="page-login__title">Знакомства без преград</h1>
+              <div class="page-login__description">Для современного мира сплочённость команды профессионалов однозначно фиксирует необходимость системы обучения кадров, соответствующей насущным потребностям.</div>
+              <div class="page-login__form-inner">
+                <div class="input__box input__email">
+                  <input type="email" class="input__item" placeholder="Введите электронную почту" required>
+                </div>
+                <div class="input__box input__pass">
+                  <input type="password" class="input__item" placeholder="Введите пароль" required>
+                  <span class="input__pass-eye"></span>
+                </div>
 
-              <button class="btn btn__color form__submit page-login__submit">Войти</button>
+                <button class="btn btn__color input__submit">Войти</button>
 
-              <a href="#" class="page-login__forgot">Я не помню пароль</a>
+                <a href="#" class="page-login__forgot">Я не помню пароль</a>
+              </div>
             </form>
           </div>
         </div>
       </div>
       </div>
     </div>
+
+    <!-- footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -92,8 +102,20 @@
     </footer>
   </div>
 
+  <!-- new password -->
 
-
+  <!-- <div class="modal">
+    <div class="modal__inner">
+      <div class="modal__title">Я не помню пароль</div>
+      <div class="modal__description">Введи свой email и мы вышлем тебе инструкции по изменению пароля</div>
+      <div class="modal__form">
+        <div class="input__box input__email">
+          <input type="email" class="input__item" placeholder="Введите электронную почту" required>
+        </div>
+        <button class="btn btn__color input__submit">Запросить новый пароль</button>
+      </div>
+    </div>
+  </div> -->
 
 
   <script src="js/script.js"></script>

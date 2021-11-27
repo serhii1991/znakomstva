@@ -1,0 +1,189 @@
+.input {
+  &__box {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      left: 3rem;
+      top: 50%;
+      transform: translateY(-80%);
+    }
+  }
+
+  &__email {
+    &::before {
+      background-image: url(../img/icons/message.svg);
+    }
+  }
+
+  &__pass {
+    &::before {
+      background-image: url(../img/icons/password.svg);
+    }
+
+    &-eye {
+        position: absolute;
+        top: 2.2rem;
+        right: 3rem;
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../img/icons/eye.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+  }
+
+  &__name {
+    &::before {
+      background-image: url(../img/icons/user.svg);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 2.3rem 2.3rem 2.3rem 7rem;
+    border-radius: 500px;
+    border: none;
+    background-color: $color-primary;
+    transition: all .3s;
+    color: $color-white;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+
+    &::placeholder {
+      color: $color-text;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      box-shadow: $btn-shadow;
+      outline: none;
+    }
+  }
+
+  &__submit {
+    padding: 2.3rem;
+    max-width: 38rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: $btn-shadow;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &__birth-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__day,
+  &__month,
+  &__year {
+    width: 10rem;
+    padding: 2.3rem 3rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__month {
+    color: $color-text;
+    width: 17rem;
+    font-size: 1.6rem;
+    appearance: none;
+    cursor: pointer;
+
+    &-box {
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        background-image: url(../img/icons/chevron-down.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 2rem;
+        top: 2.6rem;
+      }
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__sex {
+    max-width: 49%;
+    height: 7rem;
+    padding: 1.7rem;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      padding: 1px;
+
+      -webkit-mask: linear-gradient($color-white 0 0) content-box, linear-gradient($color-white 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-man {
+      &::before {
+        background: linear-gradient(90deg, $color-light-blue 0%, $color-blue 100%);
+        box-shadow: $btn-shadow;
+      }
+    }
+
+    &-woman {
+      &::before {
+        background: linear-gradient(90deg, $color-pink 0%, $color-orange 100%);
+        box-shadow: $btn-shadow;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.input__radio-man:checked ~ .input__sex-man {
+  background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+}
+
+.input__radio-woman:checked ~ .input__sex-woman {
+  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+}

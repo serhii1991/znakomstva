@@ -1,16 +1,29 @@
-@import 'vars';
-@import 'global';
-@import 'buttons';
+@import 'helper/vars';
+
+@import 'layout/global';
+@import 'layout/top-bar';
+@import 'layout/footer';
+@import 'layout/header';
+
+@import 'components/element-blur';
+@import 'components/buttons';
+@import 'components/border-gradient';
+@import 'components/inputs';
+@import 'components/modal';
+
+@import 'pages/page';
+@import 'pages/page-login';
+@import 'pages/page-register';
+
+
 @import 'animation';
-@import 'form';
 @import 'top-bar';
-@import 'header';
-@import 'footer';
-@import 'login';
-@import 'register';
-@import 'modal';
+
+
+
 @import 'home';
 @import 'cards';
 @import 'user-profile';
 @import 'chat';
 @import 'payments';
+@import 'admin';

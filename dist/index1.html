@@ -14,7 +14,9 @@
 <body>
   <div class="wrapper">
     <div class="content">
-      <!-- Header -->
+
+      <!-- header -->
+
       <header class="header">
         <span class="header__text">Знакомства по всему миру</span>
         <form action="#" class="country">
@@ -29,95 +31,80 @@
         </form>
       </header>
 
-      <div class="page page-user">
-        <div class="element-blur"></div>
-        <div class="top-bar__top">
-
+      <div class="page__wrapper page-registration__wrapper">
+        <div class="page page-registration">
           <div class="container">
-            <div class="top-bar__top-inner">
-              <div class="top-bar__logo-box">
-                <img src="img/logo.png" alt="" class="top-bar__logo">
-              </div>
-              <ul class="top-bar__menu">
-                <li class="top-bar__menu-item active"><a href="#" class="top-bar__link">Анкеты</a></li>
-                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Сообщения</a></li>
-                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Подписка</a></li>
-              </ul>
-              <select class="country__select" name="country">
-                <option value="usa">Америка</option>
-                <option value="ukraine">Украина</option>
-                <option value="poland">Польша</option>
-              </select>
 
-              <div class="top-bar__service">
-                <div class="top-bar__search-box">
-                  <input type="text" class="top-bar__search">
-                </div>
-                <button class="top-bar__notification"><span>123</span></button>
+            <!-- top-bar -->
+
+            <div class="top-bar">
+              <div class="top-bar__logo">
+                <img src="img/logo.png" alt="Znakomstva">
               </div>
-              <div class="top-bar__profile">
-                <img src="img/avtar.jpg" alt="avatar" class="top-bar__profile-avatar">
-                <div class="top-bar__profile-name">Иван Иванов</div>
+              <div class="top-bar__enter">
+                <span class="top-bar__first">Уже есть аккаунт?</span>
+                <a href="#" class="btn border-gradient top-bar__btn">Войти</a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="page-user__container">
-            <button class="btn btn__left"></button>
-            <div class="page-user__info">
-              <div class="page-user__left">
-                <div class="page-user__avatar">
-                  <img src="img/user/user-avatar.jpg" alt="avatar big" class="page-user__photo page-user__photo-avatar">
-                </div>
-                <div class="page-user__thumbnail">
-                  <img src="img/user/user-thumbnail-1.jpg" alt="thumbnail 1"
-                    class="page-user__photo page-user__photo-thumbnail">
-                  <img src="img/user/user-thumbnail-2.jpg" alt="thumbnail 2"
-                    class="page-user__photo page-user__photo-thumbnail">
-                  <img src="img/user/user-thumbnail-3.jpg" alt="thumbnail 3"
-                    class="page-user__photo page-user__photo-thumbnail">
-                  <img src="img/user/user-thumbnail-4.jpg" alt="thumbnail 4"
-                    class="page-user__photo page-user__photo-thumbnail">
-                </div>
-              </div>
-              <div class="page-user__right">
-                <div class="page-user__name online">Виктор <span class="page-user__age">22</span><span
-                    class="indicator"></span></div>
-                <button class="page-user__btn btn__color btn__hello">Поприветствовать<span
-                    class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                <div class="page-user__parametrs">
-                  <div class="page-user__parametrs-name">
-                    <div class="parametr__name parametr__money">Ставка</div>
-                    <div class="parametr__name parametr__height">Рост</div>
-                    <div class="parametr__name parametr__weight">Вес</div>
-                    <div class="parametr__name parametr__eye">Цвет глаз</div>
-                    <div class="parametr__name parametr__hair">Цвет волос</div>
-                    <div class="parametr__name parametr__meet">Цель знакомства</div>
-                  </div>
-                  <div class="page-user__parametrs-value">
-                    <div class="value__name value__money">15 654 руб</div>
-                    <div class="value__name value__height">186 см</div>
-                    <div class="value__name value__weight">80 кг</div>
-                    <div class="value__name value__eye">Голубые</div>
-                    <div class="value__name value__hair">Светлые</div>
-                    <div class="value__name value__meet">Пока не знаю</div>
-                  </div>
+
+            <!-- form -->
+
+            <div class="page-registration__form-box">
+              <div class="element-blur"></div>
+              <form action="" class="form page-registration__form">
+                <h1 class="form__title page-registration__title">Создай новый аккаунт</h1>
+                <div class="form__description page-registration__description">Присоединяйся к сообществу из 518 млн человек!</div>
+
+                <div class="form__name-box page-registration__name-box">
+                  <input type="text" class="form__name page-registration__name" placeholder="Ваше имя" required>
                 </div>
 
-                <div class="page-user__about">
-                  <h4 class="page-user__title">О себе</h4>
-                  <p class="page-user__text">Задача организации, в особенности же сложившаяся структура организации
-                    представляет собой интересный
-                    эксперимент проверки модели развития.</p>
-                  <p class="page-user__text"> Задача организации, в особенности же постоянный количественный рост
-                    и сфера нашей активности играет
-                    важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
-                  <div class="page-user__data">На сайте с <span class="data">21.08.2021</span></div>
+                <fieldset class="form__field form-registration__field">
+                  <legend class="form__field-description form-registration__field-description">Дата рождения</legend>
+                  <input type="text" class="form__day page-registration__day" placeholder="День" required>
+                  <div class="form__month-box page-registration__month-box">
+                  <select name="month" class="form__month page-registration__month">
+                    <option value="0">Месяц</option>
+                    <option value="january">Январь</option>
+                    <option value="february">Февраль</option>
+                    <option value="march">Март</option>
+                    <option value="april">Апрель</option>
+                    <option value="may">Май</option>
+                    <option value="june">Июнь</option>
+                    <option value="july">Июль</option>
+                    <option value="august">Август</option>
+                    <option value="september">Сеньтябрь</option>
+                    <option value="october">Октябрь</option>
+                    <option value="november">Ноябрь</option>
+                    <option value="december">Декабрь</option>
+                  </select>
+                  </div>
+                  <input type="text" class="form__year page-registration__year" placeholder="Год" required>
+                </fieldset>
+
+                <div class="form__sex-box page-registration__sex-box">
+
+                  <input type="radio" class="form__sex-man page-registration__sex page-registration__sex-man" value="man" id="man" name="sex">
+                  <label for="man" class="form__sex form__sex-man--button page-registration__sex-man--button"><img src="img/icons/man.png" alt="icon-man" class="form__icon"></label>
+
+                  <input type="radio" class="form__sex-woman page-registration__sex page-registration__sex-woman" value="woman" id="woman" name="sex">
+                  <label for="woman" class="form__sex form__sex-woman--button page-registration__sex-woman--button"><img src="img/icons/woman.png" alt="icon-woman" class="form__icon"></label>
                 </div>
-              </div>
+
+                <div class="form__email-box page-registration__email-box">
+                  <input type="email" class="form__email page-registration__email" placeholder="Введите электронную почту" required>
+                </div>
+
+                <div class="form__pass-box page-registration__pass-box">
+                  <input type="password" class="form__pass page-registration__pass" placeholder="Введите пароль" required>
+                  <span class="page-registration__pass-eye"></span>
+                </div>
+
+                <button class="btn btn__color form__submit page-registration__submit">Войти</button>
+
+                <a href="#" class="page-registration__forgot">Я не помню пароль</a>
+              </form>
             </div>
-            <button class="btn btn__right"></button>
           </div>
         </div>
       </div>
@@ -149,6 +136,10 @@
       </div>
     </footer>
   </div>
+
+
+
+
 
   <script src="js/script.js"></script>
 </body>

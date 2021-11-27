@@ -14,20 +14,37 @@
   &__form {
     &-box {
       max-width: 84.6rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
+
+    &-inner {
+      max-width: 38rem;
+      margin: 0 auto;
     }
   }
 
   &__title {
     font-size: 6rem;
     line-height: 9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    margin-bottom: 3rem;
   }
 
   &__forgot {
-    display: block;
+    display: inline-block;
     color: $color-text;
 
     &:hover {
-      color: $color-primary;
+      color: darken($color-text, 10);
       transition: all .2s;
     }
   }

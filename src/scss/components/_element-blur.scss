@@ -1,0 +1,9 @@
+.element-blur {
+  background-color: $color-primary;
+  width: 85rem;
+  height: 85rem;
+  position: absolute;
+  z-index: -1;
+  // top: 300px;
+  filter: blur(300px);
+}

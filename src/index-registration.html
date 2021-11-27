@@ -14,7 +14,9 @@
 <body>
   <div class="wrapper">
     <div class="content">
-      <!-- Header -->
+
+      <!-- header -->
+
       <header class="header">
         <span class="header__text">Знакомства по всему миру</span>
         <form action="#" class="country">
@@ -30,73 +32,75 @@
       </header>
 
       <div class="page__wrapper page-registration__wrapper">
-
         <div class="page page-registration">
           <div class="container">
-            <div class="page__top page-registration__top">
-              <div class="page-registration__logo">
+
+            <!-- top-bar -->
+
+            <div class="top-bar">
+              <div class="top-bar__logo">
                 <img src="img/logo.png" alt="Znakomstva">
               </div>
-              <div class="page__enter page-registration__enter">
-                <a href="#" class="page__first page-registration__first">Уже есть аккаунт?</a>
-                <a href="#" class="btn btn__transparent page__register page-registration__register">Войти</a>
+              <div class="top-bar__enter">
+                <span class="top-bar__first">Уже есть аккаунт?</span>
+                <a href="#" class="btn border-gradient top-bar__btn">Войти</a>
               </div>
             </div>
 
-            <div class="form__box page-registration__form-box">
+            <!-- form -->
+
+            <div class="page-registration__form-box">
               <div class="element-blur"></div>
-              <form action="" class="form page-registration__form">
-                <h1 class="form__title page-registration__title">Создай новый аккаунт</h1>
-                <div class="form__description page-registration__description">Присоединяйся к сообществу из 518 млн человек!</div>
-
-                <div class="form__name-box page-registration__name-box">
-                  <input type="text" class="form__name page-registration__name" placeholder="Ваше имя" required>
-                </div>
-
-                <fieldset class="form__field form-registration__field">
-                  <legend class="form__field-description form-registration__field-description">Дата рождения</legend>
-                  <input type="text" class="form__day page-registration__day" placeholder="День" required>
-                  <div class="form__month-box page-registration__month-box">
-                  <select name="month" class="form__month page-registration__month">
-                    <option value="0">Месяц</option>
-                    <option value="january">Январь</option>
-                    <option value="february">Февраль</option>
-                    <option value="march">Март</option>
-                    <option value="april">Апрель</option>
-                    <option value="may">Май</option>
-                    <option value="june">Июнь</option>
-                    <option value="july">Июль</option>
-                    <option value="august">Август</option>
-                    <option value="september">Сеньтябрь</option>
-                    <option value="october">Октябрь</option>
-                    <option value="november">Ноябрь</option>
-                    <option value="december">Декабрь</option>
-                  </select>
+              <form action="#" class="page-registration__form">
+                <h1 class="page-registration__title">Создай новый аккаунт</h1>
+                <div class="page-registration__description">Присоединяйся к сообществу из 518 млн человек!</div>
+                <div class="page-registration__form-inner">
+                  <div class="input__box input__name">
+                    <input type="text" class="input__item" placeholder="Ваше имя" required>
                   </div>
-                  <input type="text" class="form__year page-registration__year" placeholder="Год" required>
-                </fieldset>
 
-                <div class="form__sex-box page-registration__sex-box">
+                  <fieldset class="page-registration__field">
+                    <legend class="page-registration__field-description">Дата рождения</legend>
+                    <div class="input__birth-date">
+                      <input type="text" class="input__item input__day" placeholder="День" required>
+                      <div class="input__box input__month-box">
+                        <select name="month" class="input__item input__month">
+                          <option value="0">Месяц</option>
+                          <option value="january">Январь</option>
+                          <option value="february">Февраль</option>
+                          <option value="march">Март</option>
+                          <option value="april">Апрель</option>
+                          <option value="may">Май</option>
+                          <option value="june">Июнь</option>
+                          <option value="july">Июль</option>
+                          <option value="august">Август</option>
+                          <option value="september">Сеньтябрь</option>
+                          <option value="october">Октябрь</option>
+                          <option value="november">Ноябрь</option>
+                          <option value="december">Декабрь</option>
+                        </select>
+                      </div>
+                      <input type="text" class="input__item input__year" placeholder="Год" required>
+                    </div>
+                  </fieldset>
 
-                  <input type="radio" class="form__sex-man page-registration__sex page-registration__sex-man" value="man" id="man" name="sex">
-                  <label for="man" class="form__sex form__sex-man--button page-registration__sex-man--button"><img src="img/icons/man.png" alt="icon-man" class="form__icon"></label>
+                  <div class="input__box input__sex-box">
+                    <input type="radio" class="input__radio input__radio-man" value="man" id="man" name="sex">
+                    <label for="man" class="input__item input__sex input__sex-man"><img src="img/icons/man.png" alt="icon-man" class="input__icon"></label>
+                    <input type="radio" class="input__radio input__radio-woman" value="woman" id="woman" name="sex">
+                    <label for="woman" class="input__item input__sex input__sex-woman"><img src="img/icons/woman.png" alt="icon-woman" class="input__icon"></label>
+                  </div>
 
-                  <input type="radio" class="form__sex-woman page-registration__sex page-registration__sex-woman" value="woman" id="woman" name="sex">
-                  <label for="woman" class="form__sex form__sex-woman--button page-registration__sex-woman--button"><img src="img/icons/woman.png" alt="icon-woman" class="form__icon"></label>
+                  <div class="input__box input__email">
+                    <input type="email" class="input__item" placeholder="Введите электронную почту" required>
+                  </div>
+                  <div class="input__box input__pass">
+                    <input type="password" class="input__item" placeholder="Введите пароль" required>
+                    <span class="input__pass-eye"></span>
+                  </div>
+
+                  <button class="btn btn__color input__submit">Создать аккаунт</button>
                 </div>
-
-                <div class="form__email-box page-registration__email-box">
-                  <input type="email" class="form__email page-registration__email" placeholder="Введите электронную почту" required>
-                </div>
-
-                <div class="form__pass-box page-registration__pass-box">
-                  <input type="password" class="form__pass page-registration__pass" placeholder="Введите пароль" required>
-                  <span class="page-registration__pass-eye"></span>
-                </div>
-
-                <button class="btn btn__color form__submit page-registration__submit">Войти</button>
-
-                <a href="#" class="page-registration__forgot">Я не помню пароль</a>
               </form>
             </div>
           </div>

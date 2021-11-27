@@ -1,0 +1,36 @@
+.page {
+  background-color: $color-primary-dark;
+  height: 100%;
+  color: $color-white;
+  z-index: 1;
+
+  
+  &__register {
+    padding: 1.1rem 3.6rem;
+    z-index: 2;
+  }
+
+  &__wrapper {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 53.6rem;
+      bottom: 0;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

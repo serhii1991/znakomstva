@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Znakomstva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <!-- Header -->
+      <header class="header">
+        <span class="header__text">Знакомства по всему миру</span>
+        <form action="#" class="country">
+          <div class="country__flag-box">
+            <img src="img/icons/flag-usa.svg" alt="USA" class="country__flag">
+          </div>
+          <select class="country__select" name="country">
+            <option value="usa">Америка</option>
+            <option value="ukraine">Украина</option>
+            <option value="poland">Польша</option>
+          </select>
+        </form>
+      </header>
+
+      <div class="page payments">
+        <div class="element-blur"></div>
+        <div class="top-bar__top">
+
+          <div class="container">
+            <div class="top-bar__top-inner">
+              <div class="top-bar__logo-box">
+                <img src="img/logo.png" alt="" class="top-bar__logo">
+              </div>
+              <ul class="top-bar__menu">
+                <li class="top-bar__menu-item active"><a href="#" class="top-bar__link">Анкеты</a></li>
+                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Сообщения</a></li>
+                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Подписка</a></li>
+              </ul>
+              <select class="country__select" name="country">
+                <option value="usa">Америка</option>
+                <option value="ukraine">Украина</option>
+                <option value="poland">Польша</option>
+              </select>
+
+              <div class="top-bar__service">
+                <div class="top-bar__search-box">
+                  <input type="text" class="top-bar__search">
+                </div>
+                <button class="top-bar__notification"><span>123</span></button>
+              </div>
+              <div class="top-bar__profile">
+                <img src="img/avtar.jpg" alt="avatar" class="top-bar__profile-avatar">
+                <div class="top-bar__profile-name">Иван Иванов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="payments__title">Тарифы</div>
+          <div class="payments__box">
+            <div class="payments__item">
+              <div class="payments__item-img">
+                <img src="img/day.svg" alt="day">
+              </div>
+              <div class="payments__item-how-long">1 день</div>
+              <div class="payments__item-price">500 руб.</div>
+              <button class="payments__item-button">Провести оплату</button>
+            </div>
+
+            <div class="payments__item">
+              <div class="payments__item-img">
+                <img src="img/month.svg" alt="month">
+              </div>
+              <div class="payments__item-how-long">1 Месяц</div>
+              <div class="payments__item-price">5000 руб.</div>
+              <button class="payments__item-button">Провести оплату</button>
+            </div>
+
+            <div class="payments__item">
+              <div class="payments__item-img">
+                <img src="img/year.svg" alt="year">
+              </div>
+              <div class="payments__item-how-long">1 год</div>
+              <div class="payments__item-price">50000 руб.</div>
+              <button class="payments__item-button">Провести оплату</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Советы</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правила оплаты</a></li>
+            </ul>
+          </div>
+          <div class="footer-privancy">Политика обработки персональных данных</div>
+          <div class="footer__lang">
+            <form action="#">
+              <select class="footer__lang-select" name="lang">
+                <option value="ru">RU</option>
+                <option value="eng">ENG</option>
+                <option value="pol">POL</option>
+              </select>
+            </form>
+          </div>
+          <div class="footer__copy">© Company 2021</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
