@@ -1,0 +1,44 @@
+.page-count {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  &__main {
+    max-width: 48rem;
+    width: 100%;
+  }
+
+  .element-blur {
+    bottom: -60rem;
+    right: -20rem;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.main {
+  &__status,
+  &__balance {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+  &__status {
+    border-bottom: 1px solid $color-text;
+    margin-bottom: 3rem;
+  }
+
+  &__descr {
+    font-weight: 500;
+  }
+
+  &__btn {
+    width: 25rem;
+    padding: 1.8rem;
+  }
+}

@@ -4156,3 +4156,34 @@ li {
   display: flex; }
   .main__cards .card {
     margin-bottom: 2rem; }
+
+.page-count {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem; }
+  .page-count__main {
+    max-width: 48rem;
+    width: 100%; }
+  .page-count .element-blur {
+    bottom: -60rem;
+    right: -20rem;
+    z-index: -1; }
+  .page-count__inner {
+    display: flex;
+    align-items: flex-start; }
+
+.main__status, .main__balance {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem; }
+
+.main__status {
+  border-bottom: 1px solid #8B5D9A;
+  margin-bottom: 3rem; }
+
+.main__descr {
+  font-weight: 500; }
+
+.main__btn {
+  width: 25rem;
+  padding: 1.8rem; }

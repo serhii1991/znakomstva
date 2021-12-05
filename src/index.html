@@ -29,7 +29,7 @@
         </form>
       </header>
 
-      <div class="page page-favourite">
+      <div class="page page-count">
         <div class="element-blur"></div>
 
         <!-- top-panel -->
@@ -68,48 +68,28 @@
 
         <!-- page-admin -->
         <div class="container">
-          <div class="page-favourite__inner">
+          <div class="page-count__inner">
             <div class="sidebar">
               <ul class="sidebar__list">
                 <li class="sidebar__item"><img src="img/icons/user-fill-gradent.svg" alt="user"><a href="#" class="sidebar__link">Профиль</a></li>
-                <li class="sidebar__item active"><img src="img/icons/bookmark-admin.svg" alt="bookmark"><a href="#" class="sidebar__link">Избранное</a></li>
-                <li class="sidebar__item"><img src="img/icons/wallet.svg" alt="wallet"><a href="#" class="sidebar__link">Личный счет</a></li>
+                <li class="sidebar__item"><img src="img/icons/bookmark-admin.svg" alt="bookmark"><a href="#" class="sidebar__link">Избранное</a></li>
+                <li class="sidebar__item active"><img src="img/icons/wallet.svg" alt="wallet"><a href="#" class="sidebar__link">Личный счет</a></li>
                 <li class="sidebar__item"><img src="img/icons/exit.svg" alt="exit"><a href="#" class="sidebar__link">Выход</a></li>
               </ul>
             </div>
-            <div class="page-favourite__main">
-              <h2 class="main__title">Избранное</h2>
+            <div class="page-count__main">
+              <h2 class="main__title">Личный счет</h2>
 
-              <div class="main__cards">
-
-                <div class="card" style="background: url(../img/content/user-1.jpg)">
-                  <div class="card__description">
-                    <div class="card__name online">Виктор <span class="card__age">22</span><span class="indicator"></span></div>
-                    <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                    <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                  </div>
-                  <button class="card__button-close"><span></span></button>
-                </div>
-
-                <div class="card" style="background: url(../img/content/user-2.jpg)">
-                  <div class="card__description">
-                    <div class="card__name">Марина <span class="card__age">19</span><span class="indicator"></span></div>
-                    <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                    <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                  </div>
-                  <button class="card__button-close"><span></span></button>
-                </div>
-
-                <div class="card" style="background: url(../img/content/user-3.jpg)">
-                  <div class="card__description">
-                    <div class="card__name">Алексей <span class="card__age">34</span><span class="indicator"></span></div>
-                    <div class="card__country"><span class="card__country-flag"></span> Россия</div>
-                    <button class="btn__color btn__hello card__button">Поприветствовать <span class="btn__hello-hand animate__animated animate__shakeX"></span></button>
-                  </div>
-                  <button class="card__button-close"><span></span></button>
-                </div>
-
+              <div class="main__status">
+                <div class="main__name">Статус подписки</div>
+                <div class="main__descr">На <span class="main__descr-how-long">месяц</span>, до <span class="main__descr-date">20.11.2021</span></div>
               </div>
+              <div class="main__balance">
+                <div class="main__name">Текущий баланс</div>
+                <div class="main__descr"><span class="main__descr-price">2548</span> <span class="main__descr-value">руб</span></div>
+              </div>
+
+              <button class="btn btn__color main__btn">Пополнить</button>
             </div>
           </div>
         </div>
