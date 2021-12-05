@@ -3519,6 +3519,45 @@ li {
       background-size: cover; }
   .card__button {
     position: absolute; }
+    .card__button-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: transparent;
+      border: solid 2px #727272;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all .3s; }
+      .card__button-close:hover {
+        border-color: #3f3f3f; }
+        .card__button-close:hover span {
+          color: #3f3f3f;
+          transform: rotate(225deg); }
+          .card__button-close:hover span::before, .card__button-close:hover span::after {
+            background-color: #3f3f3f; }
+      .card__button-close span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        transform: rotate(45deg);
+        transition: all .3s; }
+        .card__button-close span::before, .card__button-close span::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 1rem;
+          height: 2px;
+          background-color: #727272;
+          transition: all .3s; }
+        .card__button-close span::before {
+          transform: translate(-50%, -50%) rotate(-90deg); }
 
 .chat {
   position: absolute;
@@ -4098,3 +4137,22 @@ li {
     resize: none;
     height: 18rem;
     border-radius: 3rem; }
+
+.page-favourite {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem; }
+  .page-favourite__main {
+    width: 100%; }
+  .page-favourite .element-blur {
+    bottom: -60rem;
+    left: -20rem;
+    z-index: -1; }
+  .page-favourite__inner {
+    display: flex;
+    align-items: flex-start; }
+
+.main__cards {
+  display: flex; }
+  .main__cards .card {
+    margin-bottom: 2rem; }

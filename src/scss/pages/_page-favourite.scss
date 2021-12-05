@@ -1,0 +1,30 @@
+.page-favourite {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  &__main {
+    width: 100%;
+  }
+
+  .element-blur {
+    bottom: -60rem;
+    left: -20rem;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.main {
+  &__cards {
+    display: flex;
+
+    .card {
+      margin-bottom: 2rem;
+    }
+  }
+}
