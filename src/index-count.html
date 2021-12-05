@@ -29,7 +29,7 @@
         </form>
       </header>
 
-      <div class="page page-error">
+      <div class="page page-count">
         <div class="element-blur"></div>
 
         <!-- top-panel -->
@@ -68,11 +68,28 @@
 
         <!-- page-admin -->
         <div class="container">
-          <div class="page-error__inner">
-            <div class="page-error__content">
-              <h1 class="page-error__title">404</h1>
-              <div class="page-error__descr">Вы заблудились. Но не беспокойтесь: вот правильный путь</div>
-              <a href="" class="page-error__link">Вернуться назад</a>
+          <div class="page-count__inner">
+            <div class="sidebar">
+              <ul class="sidebar__list">
+                <li class="sidebar__item"><img src="img/icons/user-fill-gradent.svg" alt="user"><a href="#" class="sidebar__link">Профиль</a></li>
+                <li class="sidebar__item"><img src="img/icons/bookmark-admin.svg" alt="bookmark"><a href="#" class="sidebar__link">Избранное</a></li>
+                <li class="sidebar__item active"><img src="img/icons/wallet.svg" alt="wallet"><a href="#" class="sidebar__link">Личный счет</a></li>
+                <li class="sidebar__item"><img src="img/icons/exit.svg" alt="exit"><a href="#" class="sidebar__link">Выход</a></li>
+              </ul>
+            </div>
+            <div class="page-count__main">
+              <h2 class="main__title">Личный счет</h2>
+
+              <div class="main__status">
+                <div class="main__name">Статус подписки</div>
+                <div class="main__descr">На <span class="main__descr-how-long">месяц</span>, до <span class="main__descr-date">20.11.2021</span></div>
+              </div>
+              <div class="main__balance">
+                <div class="main__name">Текущий баланс</div>
+                <div class="main__descr"><span class="main__descr-price">2548</span> <span class="main__descr-value">руб</span></div>
+              </div>
+
+              <button class="btn btn__color main__btn">Пополнить</button>
             </div>
           </div>
         </div>
