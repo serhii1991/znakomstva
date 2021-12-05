@@ -29,55 +29,51 @@
         </form>
       </header>
 
-      <div class="page page-error">
-        <div class="element-blur"></div>
+      <div class="page__wrapper page-login__wrapper">
 
-        <!-- top-panel -->
-
-        <div class="top-panel">
-
+        <div class="page page-login">
           <div class="container">
-            <div class="top-panel__inner">
-              <div class="top-panel__logo-box">
-                <img src="img/logo.png" alt="" class="top-panel__logo">
-              </div>
-              <ul class="top-panel__menu">
-                <li class="top-panel__menu-item active"><a href="#" class="top-panel__link">Анкеты</a></li>
-                <li class="top-panel__menu-item"><a href="#" class="top-panel__link">Сообщения</a></li>
-                <li class="top-panel__menu-item"><a href="#" class="top-panel__link">Подписка</a></li>
-              </ul>
-              <select class="country__select" name="country">
-                <option value="usa">Америка</option>
-                <option value="ukraine">Украина</option>
-                <option value="poland">Польша</option>
-              </select>
 
-              <div class="top-panel__service">
-                <div class="top-panel__search-box">
-                  <input type="text" class="top-panel__search">
-                </div>
-                <button class="top-panel__notification"><span>123</span></button>
+            <!-- top-bar -->
+            <div class="top-bar">
+              <div class="top-bar__logo">
+                <img src="img/logo.png" alt="Znakomstva">
               </div>
-              <div class="top-panel__profile">
-                <img src="img/avtar.jpg" alt="avatar" class="top-panel__profile-avatar">
-                <div class="top-panel__profile-name">Иван Иванов</div>
+              <div class="top-bar__enter">
+                <span class="top-bar__first">Впервые здесь?</span>
+                <a href="#" class="btn border-gradient top-bar__btn">Регистрация</a>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- page-admin -->
-        <div class="container">
-          <div class="page-error__inner">
-            <div class="page-error__content">
-              <h1 class="page-error__title">404</h1>
-              <div class="page-error__descr">Вы заблудились. Но не беспокойтесь: вот правильный путь</div>
-              <a href="" class="page-error__link">Вернуться назад</a>
+            <!-- form -->
+
+            <div class="page-login__form-box">
+              <div class="element-blur"></div>
+              <form action="#" class="page-login__form">
+                <h1 class="page-login__title">Знакомства без преград</h1>
+                <div class="page-login__description">Для современного мира сплочённость команды профессионалов однозначно фиксирует необходимость системы обучения кадров, соответствующей насущным потребностям.</div>
+                <div class="page-login__form-inner">
+                  <div class="input__box input__email">
+                    <input type="email" class="input__item" placeholder="Введите электронную почту" required>
+                  </div>
+                  <div class="input__box input__pass">
+                    <input type="password" class="input__item" placeholder="Введите пароль" required>
+                    <span class="input__pass-eye"></span>
+                  </div>
+
+                  <button class="btn btn__color input__submit">Войти</button>
+
+                  <a href="#" class="page-login__forgot">Я не помню пароль</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -90,7 +86,7 @@
               <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правила оплаты</a></li>
             </ul>
           </div>
-          <div class="footer-privancy">Политика обработки персональных данных</div>
+          <div class="footer__privancy">Политика обработки персональных данных</div>
           <div class="footer__lang">
             <form action="#">
               <select class="footer__lang-select" name="lang">
@@ -105,7 +101,22 @@
       </div>
     </footer>
   </div>
+
+  <!-- new password -->
+
+  <!-- <div class="modal">
+  <div class="modal__inner">
+  <div class="modal__title">Я не помню пароль</div>
+  <div class="modal__description">Введи свой email и мы вышлем тебе инструкции по изменению пароля</div>
+  <div class="modal__form">
+  <div class="input__box input__email">
+  <input type="email" class="input__item" placeholder="Введите электронную почту" required>
 </div>
+<button class="btn btn__color input__submit">Запросить новый пароль</button>
+</div>
+</div>
+</div> -->
+
 
 <script src="js/script.js"></script>
 </body>
