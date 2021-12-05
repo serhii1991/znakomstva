@@ -1,4 +1,4 @@
-.payments {
+.page-payments {
 
   .element-blur {
     top: 60rem;
@@ -47,19 +47,17 @@
         bottom: 0;
         border-radius: inherit;
         padding: 1px;
-        background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        background: $gradient;
+        -webkit-mask: linear-gradient($color-white 0 0) content-box, linear-gradient($color-white 0 0);
         -webkit-mask-composite: destination-out;
         mask-composite: exclude;
       }
     }
 
-    &:hover .payments__item-button {
-      background: -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-      background: -o-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-      background: linear-gradient(to right, #ee0979 0%, #ff6a00 100%);
+    &:hover .page-payments__item-button {
+      background: $gradient;
     }
-    
+
     &-img {
       display: block;
       margin-bottom: 2rem;
@@ -83,7 +81,7 @@
       padding: 1.5rem 3rem;
       border-radius: 50rem;
       background-color: $color-primary;
-      color: #fff;
+      color: $color-white;
       border: none;
     }
   }

@@ -1,0 +1,43 @@
+  .sidebar {
+    max-width: 28rem;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: $color-bg;
+    margin-right: 2rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &:last-child {
+        margin-top: 5rem;
+      }
+
+      img {
+        width: 2rem;
+        margin-right: 2.5rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 0;
+        left: -3rem;
+        top: 0;
+        background: $gradient;
+        transition: all .2s;
+      }
+
+      &.active::before,
+      &:hover::before {
+        height: 2.4rem;
+      }
+    }
+  }

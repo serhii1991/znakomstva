@@ -7,7 +7,7 @@
 
 
   &__color {
-    background: linear-gradient(90deg, $color-pink 0%, $color-orange 100%);
+    background: $gradient;
     color: $color-white;
     display: inline-block;
     font-size: 1.6rem;
@@ -77,12 +77,4 @@
       background-image: url(../img/icons/arr-right.svg);
     }
   }
-}
-
-.btn__transparent:hover {
-  opacity: 0.7;
-}
-
-.btn__transparent:active {
-  opacity: 1;
 }

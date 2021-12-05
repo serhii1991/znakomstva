@@ -161,14 +161,14 @@
 
     &-man {
       &::before {
-        background: linear-gradient(90deg, $color-light-blue 0%, $color-blue 100%);
+        background: $gradient-blue;
         box-shadow: $btn-shadow;
       }
     }
 
     &-woman {
       &::before {
-        background: linear-gradient(90deg, $color-pink 0%, $color-orange 100%);
+        background: $gradient;
         box-shadow: $btn-shadow;
       }
     }
@@ -181,9 +181,9 @@
 }
 
 .input__radio-man:checked ~ .input__sex-man {
-  background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+  background: $gradient-blue;
 }
 
 .input__radio-woman:checked ~ .input__sex-woman {
-  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+  background: $gradient;
 }

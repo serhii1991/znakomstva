@@ -29,19 +29,21 @@
         </form>
       </header>
 
-      <div class="page admin">
+      <div class="page page-page-payments">
         <div class="element-blur"></div>
-        <div class="top-bar__top">
 
+        <!-- top-panel -->
+
+        <div class="top-panel">
           <div class="container">
-            <div class="top-bar__top-inner">
-              <div class="top-bar__logo-box">
-                <img src="img/logo.png" alt="" class="top-bar__logo">
+            <div class="top-panel__inner">
+              <div class="top-panel__logo-box">
+                <img src="img/logo.png" alt="" class="top-panel__logo">
               </div>
-              <ul class="top-bar__menu">
-                <li class="top-bar__menu-item active"><a href="#" class="top-bar__link">Анкеты</a></li>
-                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Сообщения</a></li>
-                <li class="top-bar__menu-item"><a href="#" class="top-bar__link">Подписка</a></li>
+              <ul class="top-panel__menu">
+                <li class="top-panel__menu-item active"><a href="#" class="top-panel__link">Анкеты</a></li>
+                <li class="top-panel__menu-item"><a href="#" class="top-panel__link">Сообщения</a></li>
+                <li class="top-panel__menu-item"><a href="#" class="top-panel__link">Подписка</a></li>
               </ul>
               <select class="country__select" name="country">
                 <option value="usa">Америка</option>
@@ -49,45 +51,50 @@
                 <option value="poland">Польша</option>
               </select>
 
-              <div class="top-bar__service">
-                <div class="top-bar__search-box">
-                  <input type="text" class="top-bar__search">
+              <div class="top-panel__service">
+                <div class="top-panel__search-box">
+                  <input type="text" class="top-panel__search">
                 </div>
-                <button class="top-bar__notification"><span>123</span></button>
+                <button class="top-panel__notification"><span>123</span></button>
               </div>
-              <div class="top-bar__profile">
-                <img src="img/avtar.jpg" alt="avatar" class="top-bar__profile-avatar">
-                <div class="top-bar__profile-name">Иван Иванов</div>
+              <div class="top-panel__profile">
+                <img src="img/avtar.jpg" alt="avatar" class="top-panel__profile-avatar">
+                <div class="top-panel__profile-name">Иван Иванов</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!--  -->
         <div class="container">
-          <div class="admin__inner">
-            <div class="admin__sidebar">
-              <ul class="sidebar__list">
-                <li class="sidebar__item"><img src="" alt=""><a href="#" class="sidebar__link">Профиль</a></li>
-                <li class="sidebar__item"><img src="" alt=""><a href="#" class="sidebar__link">Избранное</a></li>
-                <li class="sidebar__item"><img src="" alt=""><a href="#" class="sidebar__link">Личный счет</a></li>
-                <li class="sidebar__item"><img src="" alt=""><a href="#" class="sidebar__link">Выход</a></li>
-              </ul>
-            </div>
-            <div class="admin__main">
-              <h2 class="main__title">Профиль</h2>
-              <div class="main__inner">
-                <div class="main__photo">
-                  <img src class="main__avatar">
-                  <img src class="main__thubnails">
-                  <img src class="main__thubnails">
-                  <img src class="main__thubnails">
-                </div>
-                <div class="main__info">
-                  
-                </div>
+          <div class="page-payments__title">Тарифы</div>
+          <div class="page-payments__box">
+            <div class="page-payments__item">
+              <div class="page-payments__item-img">
+                <img src="img/day.svg" alt="day">
               </div>
+              <div class="page-payments__item-how-long">1 день</div>
+              <div class="page-payments__item-price">500 руб.</div>
+              <button class="page-payments__item-button">Провести оплату</button>
             </div>
+
+            <div class="page-payments__item">
+              <div class="page-payments__item-img">
+                <img src="img/month.svg" alt="month">
+              </div>
+              <div class="page-payments__item-how-long">1 Месяц</div>
+              <div class="page-payments__item-price">5000 руб.</div>
+              <button class="page-payments__item-button">Провести оплату</button>
+            </div>
+
+            <div class="page-payments__item">
+              <div class="page-payments__item-img">
+                <img src="img/year.svg" alt="year">
+              </div>
+              <div class="page-payments__item-how-long">1 год</div>
+              <div class="page-payments__item-price">50000 руб.</div>
+              <button class="page-payments__item-button">Провести оплату</button>
+            </div>
+
           </div>
         </div>
       </div>

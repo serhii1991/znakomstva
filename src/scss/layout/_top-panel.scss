@@ -1,13 +1,11 @@
-.top-bar {
-  &__top {
-    background-color: $color-bg-light;
-    margin-bottom: 3rem;
+.top-panel {
+  background-color: $color-bg-light;
+  margin-bottom: 3rem;
 
-    &-inner {
-      display: flex;
-      align-items: center;
-      padding: 4.4rem 0;
-    }
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 4.4rem 0;
   }
 
   &__logo {
@@ -30,7 +28,7 @@
         bottom: -6.5rem;
         height: 4px;
         width: 100%;
-        background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+        background: $gradient;
       }
 
       &:hover {
@@ -44,21 +42,6 @@
     &-link {
       display: inline-block;
       height: 100%;
-    }
-  }
-
-  &__country {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    padding-right: 1rem;
-    cursor: pointer;
-
-    option {
-      background-color: transparent;
-      border: none;
     }
   }
 
@@ -106,10 +89,10 @@
       font-size: 1rem;
       line-height: 1.5rem;
       font-weight: 500;
-      color: #fff;
+      color: $color-white;
       top: -1rem;
       right: -2rem;
-      background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+      background: $gradient;
       border-radius: 20px;
       padding: 2px 5px;
     }

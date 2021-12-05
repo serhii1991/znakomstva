@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(29, 11, 35, 0.85);
+  background: rgba($color-bg, 0.85);
   backdrop-filter: blur(4px);
   z-index: 10;
 
@@ -41,7 +41,7 @@
       }
 
       &.active {
-        background: linear-gradient(90deg, #f8f8f8 0%, #250f2d 0.01%, #3a1845 100%);
+        background: linear-gradient(90deg, $color-white 0%, $color-bg-light 0.01%, $color-primary 100%);
       }
     }
 
@@ -57,7 +57,7 @@
     }
 
     &-name {
-      color: #fff;
+      color: $color-white;
       margin-bottom: 5px;
       font-weight: 500;
       font-size: 1.4rem;
@@ -75,7 +75,7 @@
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
-        color: #fff;
+        color: $color-white;
         font-weight: 500;
         font-size: 1rem;
         line-height: 2rem;
@@ -83,7 +83,7 @@
         position: absolute;
         right: 1.5rem;
         top: 4.8rem;
-        background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+        background: $gradient;
       }
     }
   }
@@ -91,11 +91,11 @@
   &__message {
     max-width: 53rem;
     width: 100%;
-    background-color: #2a1332;
+    background-color: $color-primary-dark;
     border-radius: 5rem;
     padding: 5rem;
     padding-bottom: 11rem;
-    color: #fff;
+    color: $color-white;
     font-weight: 400;
     position: relative;
     margin-left: -8rem;
@@ -127,7 +127,7 @@
     }
 
     .message__text {
-      background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+      background: $gradient-blue;
       border-radius: 50px 0px 50px 50px;
     }
   }
@@ -144,7 +144,7 @@
 
   &__text {
     padding: 1rem 2rem;
-    background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+    background: $gradient;
     border-radius: 0px 50px 50px 50px;
   }
 
@@ -163,7 +163,7 @@
     border: none;
     background-color: $color-primary;
     padding-right: 7rem;
-    color: #fff;
+    color: $color-white;
 
     &::placeholder {
       color: $color-text;
