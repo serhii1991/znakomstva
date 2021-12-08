@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
 
+  &__container {
+    padding-bottom: 3rem;
+  }
+
   & > .element-blur {
     width: 1200px;
     height: 1200px;
@@ -14,11 +18,13 @@
     padding: 0 10rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__left {
     max-width: 38rem;
     width: 100%;
+    margin-right: 2rem;
   }
 
   &__photo {
@@ -39,7 +45,8 @@
   }
 
   .bookmark,
-  .heart {
+  .heart,
+  .close {
     position: absolute;
     cursor: pointer;
   }
@@ -58,7 +65,8 @@
     }
   }
 
-  .heart {
+  .heart,
+  .close {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
@@ -68,7 +76,8 @@
     left: 50%;
     transform: translateX(-50%);
 
-    &:hover .heart__icon {
+    &:hover .heart__icon,
+    &:hover .close__icon {
       transform: translate(-50%, -50%) scale(1.2);
     }
 
@@ -83,6 +92,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.4s;
+    }
+    .close__icon {
+      background-image: url(../img/icons/close.svg);
     }
   }
 

@@ -34,11 +34,12 @@
 
         <!-- top-panel -->
 
-        <div class="top-panel">
+        <div class="top-panel user-panel">
           <div class="container">
             <div class="top-panel__inner">
               <div class="top-panel__logo-box">
                 <img src="img/logo.png" alt="" class="top-panel__logo">
+                <img src="img/logo-small.svg" alt="" class="top-panel__logo-small">
               </div>
               <ul class="top-panel__menu">
                 <li class="top-panel__menu-item active"><a href="#" class="top-panel__link">Анкеты</a></li>
@@ -61,6 +62,12 @@
                 <img src="img/avtar.jpg" alt="avatar" class="top-panel__profile-avatar">
                 <div class="top-panel__profile-name">Иван Иванов</div>
               </div>
+
+              <button class="top-panel__menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
           </div>
         </div>
@@ -73,7 +80,12 @@
                 <div class="page-user__avatar">
                   <button class="bookmark"></button>
                   <img src="img/user/user-avatar.jpg" alt="avatar big" class="page-user__photo page-user__photo-avatar">
+                  <div class="card__description user-panel">
+                    <div class="card__name online">Виктор <span class="card__age">22</span><span class="indicator"></span></div>
+                    <div class="card__country"><span class="card__country-flag"></span> Россия</div>
+                  </div>
                   <button class="btn__color heart"><span class="heart__icon"></span></button>
+                  <button class="btn__color-blue close"><span class="close__icon"></span></button>
                 </div>
                 <div class="page-user__thumbnail">
                   <img src="img/user/user-thumbnail-1.jpg" alt="thumbnail 1"
@@ -156,7 +168,7 @@
               <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правила оплаты</a></li>
             </ul>
           </div>
-          <div class="footer-privancy">Политика обработки персональных данных</div>
+          <div class="footer__privancy">Политика обработки персональных данных</div>
           <div class="footer__lang">
             <form action="#">
               <select class="footer__lang-select" name="lang">

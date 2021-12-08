@@ -22,6 +22,7 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
   position: relative;
+  background-color: $color-bg-light;
 }
 
 a {
@@ -47,7 +48,6 @@ li {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: $color-primary-dark;
 }
 .content {
   flex: 1 0 auto;

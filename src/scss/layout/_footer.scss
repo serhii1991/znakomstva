@@ -4,12 +4,15 @@
   line-height: 2.1rem;
   margin-top: -1px;
   z-index: 3;
+  background-color: $color-primary-dark;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   &__nav {

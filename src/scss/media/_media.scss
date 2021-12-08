@@ -21,6 +21,47 @@
   }
 }
 
+// media max-width: 75em
+
+@media (max-width: 75em) {
+  .country__select {
+    display: none;
+  }
+}
+
+// media max-width: 73.75em
+
+@media (max-width: 73.75em) {
+  .page-user__right {
+    max-width: 30rem;
+  }
+}
+
+// media max-width: 65.625em
+
+@media (max-width: 65.625em) {
+  .card {
+    min-width: 22rem;
+  }
+
+  .top-panel__profile-name {
+    display: none;
+  }
+
+  .footer__inner {
+    justify-content: space-around;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+  .footer__nav-list {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
 // media max-width: 61.3em
 
 @media (max-width: 61.3em) {
@@ -55,6 +96,61 @@
   }
 }
 
+// media max-width: 60em
+
+@media (max-width: 60em) {
+  .top-panel__menu {
+    margin-right: 0;
+    position: absolute;
+    top: 8.7rem;
+    right: 0;
+    background-color: $color-bg-light;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .top-panel__menu-item {
+    display: block;
+    padding: 2rem;
+  }
+
+  .top-panel__inner {
+    padding: 1rem 0;
+    justify-content: space-between;
+  }
+
+  .top-panel__menu-item.active::after {
+    display: none;
+  }
+
+  .top-panel__menu-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .page-home__users-title {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+  }
+
+  .top-panel__menu-btn {
+    display: block;
+  }
+
+  .page-user__info {
+    justify-content: center;
+  }
+
+  .page-user__left {
+    margin-bottom: 3rem;
+  }
+
+  .page-user__right {
+    max-width: 100%;
+  }
+}
+
 // media max-width: 40.625em
 
 @media (max-width: 40.625em) {
@@ -66,6 +162,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    &__logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
   }
 
   .page {
@@ -92,6 +195,15 @@
     z-index: 2;
   }
 
+  .page-registration__form-inner {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.wrapper {
+  height: auto;
+}
+
   .top-bar__first {
     margin-right: 0;
     display: block;
@@ -111,7 +223,7 @@
     font-size: 1.2rem;
 
     &__nav{
-      margin-bottom: 2rem;
+      width: 100%;
 
       &-list {
         margin-right: 0;
@@ -137,5 +249,112 @@
       width: 100%;
       text-align: center;
     }
+  }
+
+  .top-panel {
+    &__logo {
+      display: none;
+
+      &-small {
+        display: block;
+      }
+    }
+  }
+}
+
+// media max-width: 37.5em
+
+@media (max-width: 37.5em) {
+  .btn__left,
+  .btn__right {
+    display: none;
+  }
+
+  .page-user__left {
+    margin-right: 0;
+  }
+
+  .page-user__info {
+    padding: 0;
+  }
+}
+
+// media max-width: 28.125em
+
+@media (max-width: 28.125em) {
+  .page-registration__title {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    text-align: center;
+  }
+
+  .page-registration__description {
+    text-align: center;
+  }
+
+  .input__month-box {
+    margin: 0 .5rem;
+  }
+
+  .input__month {
+    width: 14rem;
+  }
+
+  .input__day, .input__year {
+    width: 9.2rem;
+    padding: 2.3rem 2.6rem;
+  }
+}
+
+// media max-width: 26.25em
+
+@media (max-width: 26.25em) {
+  .top-panel.user-panel {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .page-user__avatar {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .page-user__photo-avatar {
+    width: 100%;
+  }
+
+  .page-user__photo-avatar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .page-user .bookmark {
+    display: none;
+  }
+
+  .page-user .heart, {
+    transform: translateX(20%);
+    bottom: 2rem;
+  }
+
+  .page-user .close {
+    transform: translateX(-95%);
+    bottom: 2rem;
+  }
+
+  .card__description.user-panel {
+    position: absolute;
+    bottom: 6rem;
+  }
+
+  .page-user__name {
+    display: none;
+  }
+
+  .page-user__btn-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
