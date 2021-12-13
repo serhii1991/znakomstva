@@ -14,10 +14,9 @@
   }
 
   &__box {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -34,6 +33,10 @@
     transition: all .3s;
     position: relative;
     background-color: $color-bg;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
 
     &:hover,
     &.active {

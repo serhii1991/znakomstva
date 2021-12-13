@@ -177,3 +177,9 @@
   width: 100%;
   border-bottom: 1px dashed $color-primary;
 }
+
+.card__description.user-panel {
+  display: none;
+}
+
+.close {display: none;}
